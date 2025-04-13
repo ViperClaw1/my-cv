@@ -13,7 +13,7 @@ const portfolioData = [
     description: `Приложение - агрегатор бронирований столиков в ресторанах и кафе, записи в салоны, заказа и доставки товаров и многое другое.
     Версия для Android`,
     image: './img/vseekz-3.jpg',
-    link: 'https://apps.apple.com/kz/app/vsee/id6738857647',
+    link: 'https://play.google.com/store/apps/details?id=com.vseekzapp.vseekzapp',
   },
   {
     title: 'Tiger Stars',
