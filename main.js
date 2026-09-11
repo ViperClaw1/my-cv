@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Обработка формы
+// Form handling
 document
   .getElementById('contact-form')
   .addEventListener('submit', function (e) {
     e.preventDefault();
 
-    // Получаем элементы формы
+    // Get form elements
     const form = e.target;
     const nameInput = form.elements.name;
     const emailInput = form.elements.email;
@@ -34,17 +34,17 @@ document
     const submitBtn = document.getElementById('submit-btn');
     const formStatus = document.getElementById('form-status');
 
-    // Сбрасываем предыдущие состояния
+    // Reset previous states
     formStatus.className = 'form-status';
     submitBtn.classList.add('loading');
 
-    // Валидация
+    // Validation
     let isValid = true;
 
-    // Валидация имени
+    // Name validation
     if (nameInput.value.length < 2) {
       document.getElementById('name-error').textContent =
-        'Имя должно содержать минимум 2 символа';
+        'Name must be at least 2 characters';
       document.getElementById('name-error').classList.add('show');
       nameInput.classList.add('error');
       isValid = false;
@@ -53,11 +53,11 @@ document
       nameInput.classList.remove('error');
     }
 
-    // Валидация email
+    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(emailInput.value)) {
       document.getElementById('email-error').textContent =
-        'Пожалуйста, введите корректный email';
+        'Please enter a valid email';
       document.getElementById('email-error').classList.add('show');
       emailInput.classList.add('error');
       isValid = false;
@@ -66,10 +66,10 @@ document
       emailInput.classList.remove('error');
     }
 
-    // Валидация сообщения
+    // Message validation
     if (messageInput.value.length < 10) {
       document.getElementById('message-error').textContent =
-        'Сообщение должно содержать минимум 10 символов';
+        'Message must be at least 10 characters';
       document.getElementById('message-error').classList.add('show');
       messageInput.classList.add('error');
       isValid = false;
@@ -90,7 +90,7 @@ document
 
       if (isSuccess) {
         formStatus.textContent =
-          'Сообщение успешно отправлено! Я свяжусь с вами в ближайшее время.';
+          'Message sent successfully! I will get back to you shortly.';
         formStatus.classList.add('success');
 
         form.reset();
@@ -100,7 +100,7 @@ document
         }, 5000);
       } else {
         formStatus.textContent =
-          'Произошла ошибка при отправке. Пожалуйста, попробуйте позже.';
+          'An error occurred while sending. Please try again later.';
         formStatus.classList.add('error');
       }
     }, 1500);

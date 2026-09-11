@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="nikita klotsman, cv, resume">
-  <meta name="description" content="Это сайт - резюме Никиты Клоцмана">
+  <meta name="description" content="This is Nikita Klotsman's resume website">
   <title>Nikita Klotsman Resume</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,29 +16,29 @@
       <img
         class="avatar"
         src="./img/avatar.png"
-        alt="Никита Клоцман"
+        alt="Nikita Klotsman"
       >
-  
+
       <div class="info-text">
-        <h1>Никита Клоцман</h1>
+        <h1>Nikita Klotsman</h1>
 
         <h3 class="title">Full-Stack Engineer — Applied AI / LLM Product Integration</h3>
 
-        <p class="description">Full-stack инженер с 5+ годами коммерческого опыта разработки production веб- и мобильных приложений, сейчас сфокусирован на интеграции AI/LLM в продукты (React, Next.js, Node.js, Express.js, Python). Разрабатывал и запускал AI-продукты «под ключ», включая RAG-based AI консьержа с векторным поиском и приложение для дневников с LLM-интеграцией. Со-основатель и CTO двух стартапов, отвечаю за техническую стратегию и полный цикл продукта от архитектуры до продакшена.
+        <p class="description">Full-stack engineer with 5+ years of commercial experience shipping production web and mobile applications, now focused on integrating AI/LLM into products (React, Next.js, Node.js, Express.js, Python). Built and shipped AI products end-to-end, including a RAG-based AI concierge with vector search and an LLM-integrated journaling app. Co-Founder and CTO of two startups, owning technical strategy and the full product lifecycle from architecture to production.
         </p>
           <ul>
             <li>Python (middle+): FastAPI, Pydantic, SQLAlchemy</li>
             <li>JavaScript/TypeScript (middle+): React.js, Next.js, Node.js, Express.js, React Native</li>
-            <li>Базы данных и инфраструктура: PostgreSQL, Supabase, Prisma ORM, Redis, Message Queues, Docker (Coolify)</li>
+            <li>Databases & Infrastructure: PostgreSQL, Supabase, Prisma ORM, Redis, Message Queues, Docker (Coolify)</li>
           </ul>
           <p>AI / LLM:<p>
           <ul>
-            <li>Интеграция LLM API (OpenAI, Anthropic Claude), prompt engineering, agentic coding workflows</li>
-            <li>RAG-пайплайны: векторные эмбеддинги, векторный поиск (pgvector/Supabase), ранжирование выдачи</li>
-            <li>Автоматизация с AI-augmented workflows (n8n)</li>
+            <li>LLM API integration (OpenAI, Anthropic Claude), prompt engineering, agentic coding workflows</li>
+            <li>RAG pipelines: vector embeddings, vector search (pgvector/Supabase), ranked retrieval</li>
+            <li>Automation with AI-augmented workflows (n8n)</li>
           </ul>
 
-        <h4>Мои социальные сети:</h4>
+        <h4>My social networks:</h4>
 
         <a href="https://www.linkedin.com/in/nikita-klotsman-46a313265/" target="_blank">LinkedIn</a>
         <a href="https://github.com/ViperClaw1" target="_blank">GitHub</a>
@@ -47,13 +47,13 @@
     </div>
 
     <div class="wrapper bg-light-purple">
-      <h2>Опыт работы</h2>
+      <h2>Work Experience</h2>
       <table class="tab-main">
         <thead>
           <tr>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Year</th>
           </tr>
         </thead>
         <tbody>
@@ -75,57 +75,53 @@
           <tr>
             <td>Pixap, LotsApply</td>
             <td>Co-Founder & CTO — AI Product Development</td>
-            <td>2026 - сейчас</td>
+            <td>2026 - present</td>
           </tr>
         </tbody>
       </table>
     </div>
-    
+
     <div class="wrapper bg-coral">
-      <h2>Моё портфолио</h2>
+      <h2>My Portfolio</h2>
       <div id="portfolio-gallery">
-           
+
       </div>
-      <!-- <ul class="list-main">
-        <li>Профессия Джуниор Frontend-разработчик</li>
-        <li>Все курсы</li>
-      </ul> -->
     </div>
-  
+
     <div class="wrapper bg-light-green">
       <form class="form-main" id="contact-form">
-        <h2>Связаться со мной</h2>
-    
+        <h2>Get In Touch</h2>
+
         <div class="form-row">
           <div class="form-group">
-            <label for="name">Ваше имя:</label>
-            <input class="input-main" type="text" id="name" name="name" placeholder="Введите имя" required minlength="2">
+            <label for="name">Your name:</label>
+            <input class="input-main" type="text" id="name" name="name" placeholder="Enter your name" required minlength="2">
             <span class="error-message" id="name-error"></span>
           </div>
-        
+
           <div class="form-group">
-            <label for="email">Ваш email:</label>
-            <input class="input-main" type="email" id="email" name="email" placeholder="Введите email" required>
+            <label for="email">Your email:</label>
+            <input class="input-main" type="email" id="email" name="email" placeholder="Enter your email" required>
             <span class="error-message" id="email-error"></span>
           </div>
         </div>
-    
+
         <div class="form-group">
-          <label for="message">Ваше сообщение:</label>
+          <label for="message">Your message:</label>
           <textarea
             id="message"
             name="message"
             cols="20"
             rows="5"
-            placeholder="Введите сообщение..."
+            placeholder="Enter your message..."
             required
             minlength="10"></textarea>
           <span class="error-message" id="message-error"></span>
         </div>
-    
+
         <div class="form-status" id="form-status"></div>
-    
-        <button class="btn-submit" type="submit" id="submit-btn">Отправить!</button>
+
+        <button class="btn-submit" type="submit" id="submit-btn">Send!</button>
       </form>
     </div>
   </div>
