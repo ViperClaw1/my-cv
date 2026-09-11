@@ -1,2 +1,2 @@
 # my-cv
-My brief CV as a freelancer
+My Resume page (Full-Stack Engineer)
